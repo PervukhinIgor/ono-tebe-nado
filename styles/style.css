@@ -1,4 +1,6 @@
 /* место для вашего кода */
+
+
 .header {
   background-color: #fff;
   display: grid;
@@ -71,6 +73,8 @@
 .cover {
   background-image: url(../images/cover.jpg);
   background-size: cover;
+  position: relative;
+  z-index: -1;
 }
 
 .cover__title {
@@ -80,12 +84,15 @@
   font-size: 100px;
   letter-spacing: 0.3em;
   color: #fff;
+  position: relative;
+  z-index: 1;
 }
 
 .align-text {
   display: block;
   line-height: 115px;
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
 .align-text_center {
@@ -114,12 +121,14 @@
   font-weight: 500;
   font-size: 22px;
   color: #fff;
+  position: relative;
 }
 
 .cover__description-text {
   margin-right: 79px;
   align-self: center;
   word-spacing: 18px;
+  text-transform: uppercase;
 }
 
 .bet-button {
@@ -128,10 +137,104 @@
   font-family: Raleway;
   font-weight: 500;
   font-size: 22px;
+  text-transform: uppercase;
   color: #fff;
 }
 
+.lots {
+  padding: 179px 24px 0px;
+}
+
+.lots__heading {
+  margin-left: 40px;
+  margin-bottom: 27px;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.lots__card-list {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.lots__card-list-item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  position: relative;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  padding: 51px 40px 48px;
+  width: 334px;
+  height: 563px;
+}
+
+.card__title {
+  z-index: 1;
+  font-family: Raleway;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.card__text {
+  z-index: 1;
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.lots__look-more-link {
+  display: block;
+  margin-top: 30px;
+  margin-left: 40px;
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: underline;
+  text-underline-position: under;
+
+}
+
+.card_type_film {
+  z-index: -1;
+  background-image: url(../images/card-lot-01.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card_type_book {
+  z-index: -1;
+  background-image: url(../images/card-lot-02.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card_type_picture {
+  z-index: -1;
+  background-image: url(../images/card-lot-03.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
 .overlay {
+  z-index: 0;
+  position: absolute;
+  left: 0;
+  right:0;
+  top:0;
+  bottom:0;
   width: 100%;
   height: 100%;
   background-color: rgb(0 0 0 / 0.6);
