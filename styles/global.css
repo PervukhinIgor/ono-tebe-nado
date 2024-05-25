@@ -32,3 +32,9 @@ a {
 img {
   width: 100%;
 }
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+}
