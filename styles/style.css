@@ -57,7 +57,6 @@
   display: flex;
   flex-wrap: wrap;
   width: 240px;
-  height: 98px;
   font-family: Raleway, Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -74,13 +73,14 @@
 .cover {
   background-image: url(../images/cover.jpg);
   background-size: cover;
+  background-position: center;
   position: relative;
   z-index: 1;
 }
 
 .cover__title {
   padding: 165px 50px 115px 50px;
-  font-family: Raleway;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 100px;
   letter-spacing: 0.3em;
@@ -180,6 +180,7 @@
   padding: 51px 40px 48px;
   width: 334px;
   min-height: 563px;
+  z-index: 1;
 }
 
 .card__title {
@@ -216,18 +217,15 @@
 }
 
 .card_type_film {
-  z-index: 1;
   background-image: url(../images/card-lot-01.jpg);
 
 }
 
 .card_type_book {
-  z-index: 1;
   background-image: url(../images/card-lot-02.jpg);
 }
 
 .card_type_picture {
-  z-index: 1;
   background-image: url(../images/card-lot-03.jpg);
 }
 
@@ -282,7 +280,7 @@
 }
 
 .about__text {
-  font-family: Raleway;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
