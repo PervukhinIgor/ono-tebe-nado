@@ -1,6 +1,4 @@
 /* место для вашего кода */
-
-
 .header {
   background-color: #fff;
   display: grid;
@@ -32,11 +30,11 @@
   list-style: none;
 }
 
-.header__link {
+.address__link {
   text-underline-position: under;
 }
 
-.header__link_active {
+.address__link_active {
   text-decoration: none;
 }
 
@@ -72,7 +70,8 @@
 
 .cover {
   background-image: url(../images/cover.jpg);
-  background-size: cover;
+  background-size: contain;
+  background-repeat: round;
   position: relative;
   z-index: -1;
 }
@@ -289,4 +288,36 @@
 
 .about__text-no-margin {
   margin-bottom: 0px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 50px 88px;
+}
+
+.footer__menu-list {
+  text-align: center;
+  list-style: none;
+}
+
+.footer__menu-link {
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.footer__menu-link_active {
+  text-decoration: none;
+}
+
+.footer__social-icon {
+  width: 48px;
+  height: 48px;
+}
+
+.footer__social-list {
+  display: flex;
+  list-style: none;
+  gap: 48px;
 }
