@@ -15,15 +15,18 @@
   justify-content: flex-start;
   margin: 44px 0px 39px 0px;
   font-family: Raleway;
-  width: 391px;
   font-weight: 400;
   font-size: 18px;
+  letter-spacing: 0.01em;
+  width: 392px;
 }
 
 .header__links-list {
   display: flex;
   list-style: circle;
+  text-wrap: nowrap;
   gap: 32px;
+  text-underline-position: under;
 }
 
 .header__links-list-item_no-bullit {
@@ -39,15 +42,18 @@
 }
 
 .header__logo {
+  display: block;
   justify-self: left;
-  margin-left: 28px;
+  margin-left: 36px;
+  height: 105px;
+  width: 148px;
 }
 
 .header__logo-image {
   display: block;
+  justify-self: left;
   height: 105px;
   width: 148px;
-  justify-self: left;
 }
 
 .address {
@@ -59,7 +65,7 @@
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
-  line-height: 21px;
+  line-height: 24px;
   letter-spacing: 0.01em;
 }
 
@@ -243,7 +249,7 @@
 .about {
   display: grid;
   grid-template-columns: 334px 1fr;
-  margin: 146px 24px 180px;
+  margin: 0px 24px 180px;
   justify-items: start;
   row-gap: 24px;
 }
