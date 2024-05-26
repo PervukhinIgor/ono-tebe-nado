@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: 391px 1fr 1fr;
   grid-template-rows: repeat(1, 1fr);
-  margin: 90px 24px 96px;
+  margin: 92px 24px 96px;
   padding-left: 27px;
   padding-right: 26px;
   max-height: 293px;
@@ -119,7 +119,7 @@
   font-family: Raleway;
   font-weight: 500;
   font-size: 22px;
-  color: #fff; 
+  color: #fff;
   position: relative;
 }
 
@@ -141,7 +141,7 @@
 }
 
 .lots {
-  padding: 179px 24px 0px;
+  padding: 179px 24px 146px;
 }
 
 .lots__heading {
@@ -150,6 +150,7 @@
   font-family: Raleway;
   font-weight: 700;
   font-size: 40px;
+  line-height: 47px;
   text-transform: uppercase;
 }
 
